@@ -1,0 +1,104 @@
+#logo   {
+    margin:  10px auto 5px;
+    width: 50px;
+    max-height: 20%;
+}
+.title h1 {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.name   {
+    float: left;
+    margin-left: 25%;
+}
+
+.role   {
+    float: right;
+    margin-right: 15%;
+}
+
+.section-work   {
+    margin: 0 auto;
+    width:  95%;
+    border-radius: 5px;
+    font-size: 1em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box-narrow {
+    display: inline-block;
+    float: left;
+    width: 33.333333333%;
+    margin: 0;
+
+}
+
+    .box-full   {
+    float: left;
+    margin: 0;
+    width: 100%;
+    display: inline-block;    
+}
+
+.inner-box  {
+    border: 1px solid black;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10%;
+    padding: 10% 0;
+    line-height: 20%;
+}
+
+.lower-box  {
+    margin: 30px 0 60px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3% 0;
+}
+
+.box-narrow:nth-child(1) .inner-box { margin-left: 0; } 
+.box-narrow:nth-child(3) .inner-box { margin-right: 0; }
+
+/*h1  {
+    font-family: "Brandon Grotesque Bold" Helvetica;
+    font-size: 2.25em;
+}
+*/
+/*.inner-box :nth-child(3)    {
+    margin-right: 0;
+}*/
+
+/************MEDIA QUERIES****************/
+
+/* DEFAULT  Below Phone Size*/
+body:after {
+    content: "Xtra Small";
+    position: fixed;
+    top: 0;
+    right: 50%;
+    width: 60px;    
+    margin-left: -30px;
+}
+
+/* Phone Size and up*/
+@media (min-width: 480px) {
+    body:after {
+        content: "Small";
+    }
+}
+/*Tablet Size and up */
+@media (min-width: 768px) {
+    body:after {
+        content: "Med";
+    }
+}
+
+/*Desktop Size and UP */
+@media (min-width: 1024px) {
+    body:after {
+/*        content: "Large";*/
+    }
+}
